@@ -106,11 +106,23 @@ aandacht aan besteedt.
 
 **De knip** is de signature: onder elke openingsblok loopt een haarlijn met een
 kapschaar die erlangs rijdt. De schaar knipt zes keer onderweg; waar de bladen
-de lijn raken, is de lijn even onderbroken en valt er een lokje weg. Eén
-rondgang duurt 18 seconden, de knip zelf elke 3 seconden. De schaar en het
+elkaar raken, is de lijn even onderbroken en valt er een lokje weg. Eén
+rondgang duurt 18 seconden, de knip zelf elke 3,4 seconden. De schaar en het
 afgeknipte lokje zijn warm messing, de haarlijn is een zachte groene lijn. De
 knip staat op elke pagina op dezelfde plek: onder de intro, op de overgang naar
 de inhoud.
+
+De schaar zelf is een lijntekening: twee elliptische vingerringen, gedraaid
+langs de handvat-as, en twee lange bladen die elkaar precies in het midden
+kruisen. Het kruispunt zit exact op de haarlijn, dus de onderbreking valt
+altijd samen met de plek waar geknipt wordt. De onderbreking is een vast
+element van 13 pixel breed dat dezelfde baan volgt als de schaar, niet een
+masker in de svg. Zo blijft hij op elk schermformaat even breed en valt hij
+niet weg zodra de svg schaalt.
+
+De kleur van het onderbrekvlakje volgt de ondergrond: op de homepage het
+ivoor van de hero, op de subpagina's het lichte vlak van de kop. Zo blijft de
+knip op elke pagina onzichtbaar.
 
 **Scroll-reveal** laat blokken 18px omhoog komen als ze in beeld komen
 (620ms, uit-ease), met 60ms verschil tussen opeenvolgende blokken in dezelfde

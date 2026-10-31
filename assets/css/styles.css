@@ -986,16 +986,12 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .snip__gap {
   position: absolute;
   top: 50%;
-  left: -2%;
+  left: -3%;
   width: 13px;
   height: 14px;
   transform: translate(-50%, -50%);
   background: var(--snip-paper);
-  animation: snip-gap var(--dur-snip) linear infinite both;
-}
-@keyframes snip-gap {
-  from { left: -2%; }
-  to   { left: 102%; }
+  animation: snip-run var(--dur-snip) linear infinite both;
 }
 
 .snip__strand {
@@ -1068,15 +1064,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
   animation: snip-curl 3.4s ease-out infinite;
 }
 
-.snip__bite { animation: snip-bite var(--dur-snip) linear infinite both; }
-
 @keyframes snip-run {
   from { left: -3%; }
   to   { left: 103%; }
-}
-@keyframes snip-bite {
-  from { transform: translateX(-36px); }
-  to   { transform: translateX(1236px); }
 }
 @keyframes snip-arm-x {
   0%, 10%   { transform: rotate(-4deg); }
