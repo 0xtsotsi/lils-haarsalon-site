@@ -3,7 +3,26 @@
 Een statische website voor **Lil's haarsalon**, Molenweg 49 in Rozenburg (ZH).
 Geen build-stap, geen dependencies.
 
-## De site openen
+## De live site
+
+**https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/**
+
+Die link is permanent en altijd bereikbaar. De staat op GitHub Pages: de code
+staat in de repository `jalvdbroek-ship-it/lils-haarsalon-site` en elke keer
+dat je naar `main` pusht, bouwt GitHub de site opnieuw. De repo is openbaar,
+want GitHub Pages is op een gratis account alleen mogelijk voor openbare repos.
+Er staat geen privékleding of wachtwoord in.
+
+De vier pagina's:
+
+| | |
+|---|---|
+| Home | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/ |
+| Behandelingen | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/behandelingen/ |
+| Over ons | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/over-ons/ |
+| Contact | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/contact/ |
+
+## De site lokaal openen
 
 **Makkelijkst: dubbelklik `index.html`.** De site werkt dan meteen, zonder server.
 
@@ -14,17 +33,17 @@ als op een echte server):
   `http://localhost:8123`. Sluit het venster om te stoppen.
 - Of via de terminal: `npm install` een keer, daarna `npm start`.
 
-**De site delen via een link** (om aan iemand te laten zien):
+**Tijdelijk delen via een tunnel** (handig om even iemand live te laten kijken):
 
 - Dubbelklik **`start-tunnel.bat`**. Dit start de lokale server én een publieke
   tunnel via Cloudflare. Er verschijnt een URL als
   `https://....trycloudflare.com` die je kunt kopiëren en delen. Stoppen gaat door
   het venster te sluiten.
 - Let op: zo'n tunnel is tijdelijk en heeft geen uptime-garantie. Hij stopt zodra
-  je het venster sluit of je computer uitgaat. De site is daarmee publiek
-  bereikbaar, dus controleer of je niets geheim maakt.
+  je het venster sluit of je computer uitgaat, en de URL verandert bij elke start.
+  Gebruik voor de vaste link de GitHub Pages-link hierboven.
 
-De vier pagina's zijn dan te vinden op:
+De vier pagina's lokaal zijn dan te vinden op:
 
 | | |
 |---|---|
@@ -47,6 +66,20 @@ start-site.bat          start de lokale server en open de browser
 start-tunnel.bat        start de server plus een publieke tunnel om te delen
 DESIGN.md               ontwerpkeuzes en kleurcontrasten
 ```
+
+## De site online zetten
+
+De site staat op GitHub Pages. Om iets te wijzigen:
+
+1. Pas de bestanden aan in deze map.
+2. `git add` en `git commit`.
+3. `git push pages main:main`
+
+GitHub bouwt de site daarna binnen een minuut opnieuw. De URL blijft hetzelfde.
+
+De repository `0xtsotsi/LilsHaarsalon` is de privé-versie waar de voorgeschiedenis
+staat; `jalvdbroek-ship-it/lils-haarsalon-site` is de openbare repo die Pages
+serveert.
 
 ## Wat er staat vast
 
@@ -108,7 +141,10 @@ moet dat vanaf de salon zelf gekoppeld worden.
    regel aan: geen foto twee keer op dezelfde pagina, en geen tekst die iets beschrijft
    wat de eigen foto niet toont.
 4. **Domein en beveiliging.** `robots.txt` en `sitemap.xml` verwijzen naar
-   `lilshaarsalon.nl`. Pas die aan als het domein anders wordt.
+   `lilshaarsalon.nl`. Dat domein bestaat nog niet. Zodra je het domein
+   koopt en op GitHub Pages zet, pas die twee bestanden en de `canonical`- en
+   `og:url`-tags in de vier HTML-bestanden aan. Tot die tijd is de
+   Pages-link de echte link.
 5. **KvK en privacy.** Voeg een privacyverklaring en het KvK-nummer toe zodra die
    bekend zijn. De formululiergegevens worden nu nergens opgeslagen.
 
