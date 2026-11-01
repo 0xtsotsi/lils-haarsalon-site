@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Socialmediapakket | Lil's haarsalon</title>
+<meta name="description" content="Het socialmediapakket van Lil's haarsalon: kant-en-klare beelden in vier formaten, korte video's en bijschriften.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Karla:ital,wght@0,300..800;1,300..800&display=swap">
+<style>
+  :root {
+    --ink: #18251f;
+    --ink-700: #404e47;
+    --ink-500: #59655e;
+    --bg: #f9f7f1;
+    --surface: #f0ece3;
+    --accent: #176540;
+    --brass: #c59542;
+    --line: #dad7d2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Karla, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 28px; margin-bottom: 40px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+  .brand svg { width: 40px; height: 40px; }
+  .brand-name { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 22px; }
+  .brand-place { font-size: 10px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-500); }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 44px; line-height: 1.05; margin: 0 0 12px; }
+  .lede { font-size: 17px; color: var(--ink-700); max-width: 60ch; margin: 0; }
+  h2 { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 26px; margin: 48px 0 8px; }
+  h2:first-of-type { margin-top: 0; }
+  .note { color: var(--ink-500); font-size: 14px; margin: 0 0 20px; max-width: 70ch; }
+  .rule { width: 54px; height: 3px; background: var(--brass); margin: 16px 0 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px; }
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+    background: var(--surface);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 160ms ease;
+  }
+  .card:hover { transform: translateY(-3px); }
+  .card-image { display: block; line-height: 0; }
+  .card-image:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+  .card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .card img { width: 100%; height: 150px; object-fit: cover; object-position: 50% 30%; display: block; flex: 0 0 auto; }
+  .card-body { padding: 12px 14px 14px; display: flex; flex-direction: column; align-items: flex-start; flex: 1 1 auto; }
+  .card-title { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 16px; margin: 0 0 3px; }
+  .card-meta { font-size: 12px; color: var(--ink-500); margin: 0; display: block; }
+  .card-formats { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .card-formats a { flex: 0 0 auto; }
+  .card-formats a {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--accent); background: var(--bg); border-radius: 6px; padding: 3px 8px;
+    text-decoration: none;
+  }
+  .card-formats a:hover { background: var(--ink); color: var(--bg); }
+  .card-formats a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .card-formats { width: 100%; }
+  .card-title, .card-meta { width: 100%; }
+  .video-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .video-list a {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--surface); border-radius: 12px; padding: 14px 16px;
+    text-decoration: none; color: inherit;
+  }
+  .video-list a:hover { background: #e8e2d7; }
+  .video-list a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .video-name { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 17px; }
+  .video-meta { font-size: 13px; color: var(--ink-500); }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; color: var(--ink-500); }
+  footer a { color: var(--accent); }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; background: var(--surface); padding: 2px 6px; border-radius: 5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="12" fill="#18251f"/>
+        <circle cx="20" cy="11" r="3.6" fill="#ea3c3f"/>
+        <circle cx="20" cy="20" r="3.6" fill="#f5aa00"/>
+        <circle cx="20" cy="29" r="3.6" fill="#20c45f"/>
+      </svg>
+      <span>
+        <span class="brand-name">Lil's haarsalon</span>
+        <span class="brand-place">Rozenburg</span>
+      </span>
+    </div>
+    <h1>Socialmediapakket</h1>
+    <p class="lede">
+      Alle beelden, video's en teksten op één plek. Elk beeld staat in vier
+      formaten, zodat je één keer kiest wat je post en daarna klaar bent voor
+      elke kanaal.
+    </p>
+    <div class="rule"></div>
+  </header>
+
+  <main>
+    <h2>Bijschriften en planning</h2>
+    <p class="note">Kopieer de bijschrift en de hashtags. De opbouw van een goede bijschrift en het weekschema staan in deze bestanden.</p>
+    <ul class="video-list">
+      <li><a href="content/bijschriften-overzicht.md" download><span><span class="video-name">Bijschriften per post</span><br><span class="video-meta">Bijschrift en hashtags voor alle 12 posts</span></span></a></li>
+      <li><a href="content/bijschriften.md" download><span><span class="video-name">Bijschriften, hashtags en regels</span><br><span class="video-meta">Hoe je een bijschrift opbouwt en welke hashtags je gebruikt</span></span></a></li>
+      <li><a href="content/schemas.md" download><span><span class="video-name">De vijf postschemas</span><br><span class="video-meta">De vaste vormen waarmee je elke week je feed vult</span></span></a></li>
+      <li><a href="content/planning.md" download><span><span class="video-name">Het weekschema</span><br><span class="video-meta">Wat je wanneer post, en de vaste gegevens</span></span></a></li>
+      <li><a href="README.md" download><span><span class="video-name">Volledige beschrijving</span><br><span class="video-meta">Alle bestanden, de sjablonen en hoe je nieuwe posts maakt</span></span></a></li>
+    </ul>
+
+    <!-- BEELDEN -->
+    <h2>Beelden</h2>
+    <p class="note">Elke post staat in vier formaten. Klik op een formaat om het bestand te krijgen.</p>
+    <div class="grid">
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/prijs-wassen-knippen-dames.jpg" download>
+          <img src="output/images/square/prijs-wassen-knippen-dames.jpg" alt="Wassen en knippen dames" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Wassen en knippen dames</p>
+          <p class="card-meta">Wassen en knippen</p>
+          <div class="card-formats"><a href="output/images/square/prijs-wassen-knippen-dames.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/prijs-wassen-knippen-dames.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/prijs-wassen-knippen-dames.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/prijs-wassen-knippen-dames.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/prijs-kinderen.jpg" download>
+          <img src="output/images/square/prijs-kinderen.jpg" alt="Kinderen tot 12 jaar" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Kinderen tot 12 jaar</p>
+          <p class="card-meta">Voor de kleintjes</p>
+          <div class="card-formats"><a href="output/images/square/prijs-kinderen.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/prijs-kinderen.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/prijs-kinderen.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/prijs-kinderen.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/prijs-kleuren.jpg" download>
+          <img src="output/images/square/prijs-kleuren.jpg" alt="Kleuren" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Kleuren</p>
+          <p class="card-meta">Kleuren</p>
+          <div class="card-formats"><a href="output/images/square/prijs-kleuren.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/prijs-kleuren.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/prijs-kleuren.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/prijs-kleuren.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/prijs-hoofdmassage.jpg" download>
+          <img src="output/images/square/prijs-hoofdmassage.jpg" alt="Hoofdmassage" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Hoofdmassage</p>
+          <p class="card-meta">Los te boeken</p>
+          <div class="card-formats"><a href="output/images/square/prijs-hoofdmassage.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/prijs-hoofdmassage.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/prijs-hoofdmassage.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/prijs-hoofdmassage.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/openingstijden-stoplicht.jpg" download>
+          <img src="output/images/square/openingstijden-stoplicht.jpg" alt="Kom binnen als het groen is" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Kom binnen als het groen is</p>
+          <p class="card-meta">Openingstijden</p>
+          <div class="card-formats"><a href="output/images/square/openingstijden-stoplicht.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/openingstijden-stoplicht.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/openingstijden-stoplicht.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/openingstijden-stoplicht.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/tip-hoofdhuid.jpg" download>
+          <img src="output/images/square/tip-hoofdhuid.jpg" alt="Je hoofdhuid vertelt meer dan je denkt" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Je hoofdhuid vertelt meer dan je denkt</p>
+          <p class="card-meta">Haaradvies</p>
+          <div class="card-formats"><a href="output/images/square/tip-hoofdhuid.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/tip-hoofdhuid.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/tip-hoofdhuid.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/tip-hoofdhuid.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/tip-kleur-bijwerken.jpg" download>
+          <img src="output/images/square/tip-kleur-bijwerken.jpg" alt="Wanneer moet je je uitgroei laten bijwerken?" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Wanneer moet je je uitgroei laten bijwerken?</p>
+          <p class="card-meta">Haaradvies</p>
+          <div class="card-formats"><a href="output/images/square/tip-kleur-bijwerken.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/tip-kleur-bijwerken.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/tip-kleur-bijwerken.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/tip-kleur-bijwerken.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/team-vaste-gezichten.jpg" download>
+          <img src="output/images/square/team-vaste-gezichten.jpg" alt="Wie er zit" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Wie er zit</p>
+          <p class="card-meta">Vaste gezichten</p>
+          <div class="card-formats"><a href="output/images/square/team-vaste-gezichten.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/team-vaste-gezichten.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/team-vaste-gezichten.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/team-vaste-gezichten.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/sfeer-de-salon.jpg" download>
+          <img src="output/images/square/sfeer-de-salon.jpg" alt="Licht, rustig en netjes" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Licht, rustig en netjes</p>
+          <p class="card-meta">De salon</p>
+          <div class="card-formats"><a href="output/images/square/sfeer-de-salon.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/sfeer-de-salon.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/sfeer-de-salon.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/sfeer-de-salon.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/sfeer-knippen.jpg" download>
+          <img src="output/images/square/sfeer-knippen.jpg" alt="Precies zoals jij het wilt" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Precies zoals jij het wilt</p>
+          <p class="card-meta">Het werk</p>
+          <div class="card-formats"><a href="output/images/square/sfeer-knippen.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/sfeer-knippen.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/sfeer-knippen.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/sfeer-knippen.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/sfeer-team-moment.jpg" download>
+          <img src="output/images/square/sfeer-team-moment.jpg" alt="Je komt er altijd herboren vandaan" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Je komt er altijd herboren vandaan</p>
+          <p class="card-meta">Gezellig</p>
+          <div class="card-formats"><a href="output/images/square/sfeer-team-moment.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/sfeer-team-moment.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/sfeer-team-moment.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/sfeer-team-moment.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-image" href="output/images/portrait/sfeer-styling.jpg" download>
+          <img src="output/images/square/sfeer-styling.jpg" alt="Föhnen, strijken of juist krullen" loading="lazy" width="1080" height="1080">
+        </a>
+        <div class="card-body">
+          <p class="card-title">Föhnen, strijken of juist krullen</p>
+          <p class="card-meta">Styling</p>
+          <div class="card-formats"><a href="output/images/square/sfeer-styling.jpg" download title="vierkant 1080 × 1080">square</a> <a href="output/images/portrait/sfeer-styling.jpg" download title="portret 1080 × 1350">portrait</a> <a href="output/images/story/sfeer-styling.jpg" download title="story 1080 × 1920">story</a> <a href="output/images/landscape/sfeer-styling.jpg" download title="landschap 1200 × 628">landscape</a></div>
+        </div>
+      </article>
+    </div>
+
+    <h2>Korte video's</h2>
+    <p class="note">H.264, 30 fps, zonder geluid. Voeg muziek toe in Instagram zelf.</p>
+    <ul class="video-list">
+      <li><a href="output/video/de-knip.mp4" download><span><span class="video-name">De knip</span><br><span class="video-meta">1080 × 1920 · 6,4 seconden</span></span></a></li>
+      <li><a href="output/video/de-knip-vierkant.mp4" download><span><span class="video-name">De knip, vierkant</span><br><span class="video-meta">1080 × 1080 · 6,4 seconden</span></span></a></li>
+      <li><a href="output/video/de-salon.mp4" download><span><span class="video-name">De salon</span><br><span class="video-meta">1080 × 1920 · 6,4 seconden</span></span></a></li>
+      <li><a href="output/video/het-stoplicht.mp4" download><span><span class="video-name">Het stoplicht</span><br><span class="video-meta">1080 × 1920 · 6,4 seconden</span></span></a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>
+      Molenweg 49, Rozenburg · 0181-219017 ·
+      <a href="https://www.instagram.com/lilshaarsalon/">@lilshaarsalon</a>
+    </p>
+    <p>De sjablonen en scripts staan in <code>social/</code> in de repository.</p>
+  </footer>
+</div>
+</body>
+</html>

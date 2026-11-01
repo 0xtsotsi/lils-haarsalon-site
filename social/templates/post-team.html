@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl" data-format="square">
+<head>
+<meta charset="utf-8">
+<title>Het team</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .post { padding: 2.8rem; }
+  .post__body { margin-top: 2.2rem; }
+  .post__body .display { font-size: 3.2rem; max-width: 15ch; }
+  .post__lede { font-size: 1rem; color: var(--ink-700); margin: 1rem 0 0; max-width: 34ch; line-height: 1.5; }
+  .post__team { display: flex; gap: 1.1rem; margin: 2.2rem 0 0; }
+  .post__person { flex: 1 1 0; }
+  .post__initials {
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+    background: var(--accent-700);
+    color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 36, "SOFT" 20, "WONK" 1;
+    font-weight: 600;
+    font-size: 1.9rem;
+  }
+  .post__person:nth-child(2) .post__initials { background: var(--accent); }
+  .post__person:nth-child(3) .post__initials { background: var(--brass-700); }
+  .post__name {
+    font-family: var(--font-display);
+    font-variation-settings: "opsz" 36, "SOFT" 20, "WONK" 1;
+    font-weight: 600;
+    font-size: 1.45rem;
+    margin: 0.8rem 0 0;
+  }
+  .post__role { font-size: 0.78rem; color: var(--ink-500); margin: 0.2rem 0 0; }
+  .post__foot { margin-top: 2rem; }
+
+  html[data-format="portrait"] .post__body .display { font-size: 3.6rem; }
+  html[data-format="story"] .post { padding: 3.4rem; padding-top: 15rem; padding-bottom: 22rem; }
+  html[data-format="story"] .post__body .display { font-size: 4.2rem; }
+  html[data-format="story"] .post__initials { width: 5.4rem; height: 5.4rem; font-size: 2.2rem; }
+  html[data-format="landscape"] .post { padding: 2.2rem 2.4rem; }
+  html[data-format="landscape"] .post__body { margin-top: 1.2rem; }
+  html[data-format="landscape"] .post__body .display { font-size: 2.4rem; }
+  html[data-format="landscape"] .post__lede { display: none; }
+  html[data-format="landscape"] .post__team { margin-top: 1.2rem; }
+  html[data-format="landscape"] .post__initials { width: 3.4rem; height: 3.4rem; font-size: 1.4rem; }
+  html[data-format="landscape"] .post__name { font-size: 1.1rem; margin-top: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="mark">
+    <span class="mark__lamp">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="12" fill="#18251f"/>
+        <circle cx="20" cy="11" r="3.6" fill="#ea3c3f"/>
+        <circle cx="20" cy="20" r="3.6" fill="#f5aa00"/>
+        <circle cx="20" cy="29" r="3.6" fill="#20c45f"/>
+      </svg>
+    </span>
+    <span class="mark__text">
+      <span class="mark__name">Lil's haarsalon</span>
+      <span class="mark__place">Rozenburg</span>
+    </span>
+  </div>
+
+  <div class="post__body stack">
+    <p class="eyebrow">Vaste gezichten</p>
+    <h1 class="display">{{TITLE}}</h1>
+    <p class="post__lede">{{BODY}}</p>
+
+    <div class="post__team">
+      <div class="post__person">
+        <div class="post__initials">L</div>
+        <p class="post__name">Lil</p>
+        <p class="post__role">Kapster</p>
+      </div>
+      <div class="post__person">
+        <div class="post__initials">S</div>
+        <p class="post__name">Sandra</p>
+        <p class="post__role">Kapster</p>
+      </div>
+      <div class="post__person">
+        <div class="post__initials">C</div>
+        <p class="post__name">Charèl</p>
+        <p class="post__role">Kapster</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="post__foot">
+    <span>Molenweg 49, Rozenburg</span>
+    <span class="post__foot-dot"></span>
+    <span class="post__foot-handle">0181-219017</span>
+  </div>
+</div>
+</body>
+</html>

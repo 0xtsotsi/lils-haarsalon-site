@@ -1,0 +1,160 @@
+{
+  "brand": {
+    "name": "Lil's haarsalon",
+    "place": "Rozenburg",
+    "address": "Molenweg 49, Rozenburg",
+    "phone": "0181-219017",
+    "instagram": "@lilshaarsalon",
+    "facebook": "Lil's haarsalon, Rozenburg",
+    "website": "https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/"
+  },
+  "posts": [
+    {
+      "id": "prijs-wassen-knippen-dames",
+      "template": "post-prijs.html",
+      "img": "salon-wash.jpg",
+      "focal": "50% 40%",
+      "eyebrow": "Wassen en knippen",
+      "title": "Wassen en knippen dames",
+      "body": "Wassen met hoofdmassage, knippen en stylen naar jouw wens. Je zit zo aan de stoel.",
+      "price": "38,50",
+      "caption": "Wassen en knippen dames bij Lil's haarsalon vanaf 38,50. Inclusief hoofdmassage, knippen en stylen. Voor dames, heren en kinderen. Bel 0181-219017 of loop binnen als het stoplicht groen staat.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#haircut", "#wassen", "#hoofdmassage"]
+    },
+    {
+      "id": "prijs-kinderen",
+      "template": "post-prijs.html",
+      "img": "salon-laughing.jpg",
+      "focal": "50% 45%",
+      "eyebrow": "Voor de kleintjes",
+      "title": "Kinderen tot 12 jaar",
+      "body": "Ook voor kinderen die het spannend vinden. We hebben alle tijd en ze vinden het leuk.",
+      "price": "22,50",
+      "caption": "Je kind ook mee? Bij Lil's haarsalon knippen we kinderen tot 12 jaar vanaf 22,50. We nemen de tijd, het is routine bij ons. Neem een knuffel mee, dat helpt.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#kinderen", "#haircut"]
+    },
+    {
+      "id": "prijs-kleuren",
+      "template": "post-prijs.html",
+      "img": "salon-cut-hands.jpg",
+      "focal": "50% 45%",
+      "eyebrow": "Kleuren",
+      "title": "Kleuren",
+      "body": "Uitgroei bijwerken, volledig kleuren of een tint. Inclusief verzorging, want kleur alleen is niet genoeg.",
+      "price": "58,50",
+      "caption": "Kleuren bij Lil's haarsalon vanaf 58,50. Uitgroei bijwerken, volledig kleuren of een tint, inclusief verzorging. We adviseren wat het beste past bij jouw haar. Bel 0181-219017.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#kleuren", "#haircare"]
+    },
+    {
+      "id": "prijs-hoofdmassage",
+      "template": "post-prijs.html",
+      "img": "salon-wash.jpg",
+      "focal": "50% 30%",
+      "eyebrow": "Los te boeken",
+      "title": "Hoofdmassage",
+      "body": "Even helemaal tot rust komen. Ook los te boeken, zonder knipbeurt.",
+      "price": "15,00",
+      "caption": "Even helemaal tot rust komen. Je kunt bij Lil's haarsalon ook alleen een hoofdmassage boeken, vanaf 15,00. Molenweg 49, Rozenburg. Bel 0181-219017.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#hoofdmassage", "#wellness"]
+    },
+    {
+      "id": "openingstijden-stoplicht",
+      "template": "post-stoplicht.html",
+      "img": "salon-interior-real.jpg",
+      "focal": "50% 50%",
+      "eyebrow": "Openingstijden",
+      "title": "Kom binnen als het groen is",
+      "caption": "Het stoplicht aan de deur vertelt het meteen. Rood is helaas, oranje is misschien, groen betekent dat je vast geholpen kunt worden. Openingstijden: ma, di, do, vr 09:00-17:30, za 08:30-15:00. Woensdag en zondag gesloten.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#openingstijden"]
+    },
+    {
+      "id": "tip-hoofdhuid",
+      "template": "post-tip.html",
+      "img": "salon-products.jpg",
+      "focal": "50% 50%",
+      "eyebrow": "Haaradvies",
+      "title": "Je hoofdhuid vertelt meer dan je denkt",
+      "cardlabel": "Wat helpt",
+      "tips": [
+        "Was je haar niet elke dag, maar om de twee tot drie dagen",
+        "Gebruik lauw water, heet water trekt het vet weg",
+        "Dep het haar droog in plaats van te wrijven",
+        "Borstel vanaf de punten omhoog, anders knis je er lussen uit"
+      ],
+      "caption": "Een paar simpele gewoontes die je haar beter maken: vaker deppen dan wrijven, lauw water gebruiken en van onderuit borstelen. Vraag ons bij je volgende bezoek wat het beste bij jouw haar past.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#haarverzorging", "#haaradvies"]
+    },
+    {
+      "id": "tip-kleur-bijwerken",
+      "template": "post-tip.html",
+      "img": "salon-stylist-client.jpg",
+      "focal": "50% 25%",
+      "eyebrow": "Haaradvies",
+      "title": "Wanneer moet je je uitgroei laten bijwerken?",
+      "cardlabel": "Vuistregel",
+      "tips": [
+        "Elke 6 tot 8 weken is een mooi ritme voor uitgroei",
+        "Bij highlights wil je eerder bijwerken, rond de 4 weken",
+        "Verf je de hele kleur, dan wacht je iets langer",
+        "Liever vaak een klein stukje dan ineens een hele verfvloed"
+      ],
+      "caption": "Hoe vaak je je uitgroei moet laten bijwerken hangt af van je kleur en je haar. In de salon rekenen we het voor je uit, zodat je haar nooit twee kleuren tegelijk hebt.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#kleuren", "#uitgroei"]
+    },
+    {
+      "id": "team-vaste-gezichten",
+      "template": "post-team.html",
+      "img": "salon-team.jpg",
+      "focal": "50% 30%",
+      "eyebrow": "Vaste gezichten",
+      "title": "Wie er zit",
+      "body": "Een vast team, zodat je niet elke keer je vertrouwen kwijt bent. Lil, Sandra en Charèl werken alle drie met gediplomeerde handen.",
+      "caption": "Een vast team, zodat je niet elke keer je vertrouwen kwijt bent. Welkom bij Lil, Sandra en Charèl. Gediplomeerde kapsters met ervaring en echt liefde voor het vak.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#team"]
+    },
+    {
+      "id": "sfeer-de-salon",
+      "template": "post-foto.html",
+      "img": "salon-interior-real.jpg",
+      "focal": "50% 50%",
+      "eyebrow": "De salon",
+      "title": "Licht, rustig en netjes",
+      "body": "Geen drukte, alleen aandacht voor jouw haar. Kom eens langs en kijk zelf.",
+      "caption": "Dit is onze salon: licht, rustig en netjes. Geen drukte, alleen aandacht voor jouw haar. Je vindt ons op de Molenweg in het centrum van Rozenburg.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#sfeer"]
+    },
+    {
+      "id": "sfeer-knippen",
+      "template": "post-foto.html",
+      "img": "salon-cut-hands.jpg",
+      "focal": "50% 45%",
+      "eyebrow": "Het werk",
+      "title": "Precies zoals jij het wilt",
+      "body": "Wij luisteren naar wat je zegt, en naar wat je haar nodig heeft.",
+      "caption": "Wij luisteren naar wat je zegt, en naar wat je haar nodig heeft. Knippen, kleuren en stylen bij Lil's haarsalon in Rozenburg.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#haircut", "#knippen"]
+    },
+    {
+      "id": "sfeer-team-moment",
+      "template": "post-foto.html",
+      "img": "salon-laughing.jpg",
+      "focal": "50% 45%",
+      "eyebrow": "Gezellig",
+      "title": "Je komt er altijd herboren vandaan",
+      "body": "Voor jong en oud. Dames, heren en kinderen zijn allemaal welkom.",
+      "caption": "Voor jong en oud. Dames, heren en kinderen zijn allemaal welkom bij Lil's haarsalon. Kom eens langs in het centrum van Rozenburg.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#gezellig", "#voorjongenoud"]
+    },
+    {
+      "id": "sfeer-styling",
+      "template": "post-foto.html",
+      "img": "salon-stylist-client.jpg",
+      "focal": "50% 22%",
+      "eyebrow": "Styling",
+      "title": "Föhnen, strijken of juist krullen",
+      "body": "Of je haar nu spiegelglad of met slag wilt: wij brengen het precies zoals je het wilt.",
+      "caption": "Of je haar nu spiegelglad of met slag wilt: wij brengen het precies zoals je het wilt. Föhnen, strijken of krullen vanaf 19,50.",
+      "hashtags": ["#lilshaarsalon", "#rozenburg", "#kapsalon", "#styling", "#fohnen"]
+    }
+  ]
+}

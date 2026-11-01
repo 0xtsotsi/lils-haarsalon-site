@@ -4,7 +4,12 @@
   "private": true,
   "description": "Website voor Lil's haarsalon, Molenweg 49 Rozenburg",
   "scripts": {
-    "start": "http-server -p 8123 -c-1 ."
+    "start": "http-server -p 8123 -c-1 .",
+    "social:images": "node social/scripts/render-images.mjs",
+    "social:video": "node social/scripts/render-videos.mjs",
+    "social:captions": "node social/scripts/export-captions.mjs",
+    "social:index": "node social/scripts/build-index.mjs",
+    "social:all": "npm run social:images && npm run social:captions && npm run social:index"
   },
   "devDependencies": {
     "http-server": "^14.1.1"

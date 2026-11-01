@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl" data-format="square">
+<head>
+<meta charset="utf-8">
+<title>Openingstijden</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .post { padding: 2.8rem; }
+  .post__body { margin-top: 2.4rem; }
+  .post__body .display { font-size: 3.1rem; max-width: 16ch; }
+  .post__lede { font-size: 1rem; color: rgba(249, 247, 241, 0.82); margin: 1rem 0 0; max-width: 32ch; line-height: 1.5; }
+  .post__hours { margin: 2rem 0 0; border-top: 2px solid var(--line-dark); }
+  .post__hours tr { border-bottom: 1px solid var(--line-dark); }
+  .post__hours th {
+    text-align: left;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.62rem 0;
+  }
+  .post__hours td {
+    text-align: right;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--bg);
+    padding: 0.62rem 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .post__hours tr[data-closed="true"] th { color: rgba(249,247,241,0.5); font-weight: 400; }
+  .post__hours tr[data-closed="true"] td { color: rgba(249,247,241,0.5); font-weight: 400; }
+  .post__legend { display: flex; gap: 1.6rem; margin: 1.8rem 0 0; flex-wrap: wrap; }
+  .post__legend-item { display: flex; align-items: center; gap: 0.55rem; font-size: 0.8rem; color: rgba(249,247,241,0.86); }
+  .post__bulb { width: 0.85rem; height: 0.85rem; border-radius: 50%; flex: 0 0 auto; }
+  .post__foot { margin-top: 1.8rem; }
+
+  html[data-format="portrait"] .post__body .display { font-size: 3.6rem; }
+  html[data-format="story"] .post { padding: 3.4rem; padding-top: 15rem; padding-bottom: 22rem; }
+  html[data-format="story"] .post__body .display { font-size: 4.2rem; }
+  html[data-format="story"] .post__hours td, html[data-format="story"] .post__hours th { font-size: 1.05rem; }
+  html[data-format="landscape"] .post { padding: 2.2rem 2.4rem; }
+  html[data-format="landscape"] .post__body { margin-top: 1.2rem; }
+  html[data-format="landscape"] .post__body .display { font-size: 2.4rem; }
+  html[data-format="landscape"] .post__lede { display: none; }
+  html[data-format="landscape"] .post__hours { margin-top: 1rem; }
+  html[data-format="landscape"] .post__hours td, html[data-format="landscape"] .post__hours th { font-size: 0.86rem; padding: 0.36rem 0; }
+  html[data-format="landscape"] .post__legend { display: none; }
+</style>
+</head>
+<body>
+<div class="post post--ink">
+  <div class="mark">
+    <span class="mark__lamp">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="12" fill="#f0ece3"/>
+        <circle cx="20" cy="11" r="3.6" fill="#c52b30"/>
+        <circle cx="20" cy="20" r="3.6" fill="#bd6800"/>
+        <circle cx="20" cy="29" r="3.6" fill="#008f35"/>
+      </svg>
+    </span>
+    <span class="mark__text">
+      <span class="mark__name">Lil's haarsalon</span>
+      <span class="mark__place">Rozenburg</span>
+    </span>
+  </div>
+
+  <div class="post__body stack">
+    <p class="eyebrow">Het stoplicht</p>
+    <h1 class="display">{{TITLE}}</h1>
+    <p class="post__lede">Het stoplicht aan de deur vertelt het meteen. Loop gerust binnen als het groen staat.</p>
+
+    <table class="post__hours">
+      <tbody>
+        <tr><th scope="row">Maandag</th><td>09:00 - 17:30</td></tr>
+        <tr><th scope="row">Dinsdag</th><td>09:00 - 17:30</td></tr>
+        <tr data-closed="true"><th scope="row">Woensdag</th><td>Gesloten</td></tr>
+        <tr><th scope="row">Donderdag</th><td>09:00 - 17:30</td></tr>
+        <tr><th scope="row">Vrijdag</th><td>09:00 - 17:30</td></tr>
+        <tr><th scope="row">Zaterdag</th><td>08:30 - 15:00</td></tr>
+        <tr data-closed="true"><th scope="row">Zondag</th><td>Gesloten</td></tr>
+      </tbody>
+    </table>
+
+    <div class="post__legend">
+      <span class="post__legend-item"><span class="post__bulb" style="background:#ea3c3f"></span>Rood, helaas</span>
+      <span class="post__legend-item"><span class="post__bulb" style="background:#f5aa00"></span>Oranje, misschien</span>
+      <span class="post__legend-item"><span class="post__bulb" style="background:#20c45f"></span>Groen, kom binnen</span>
+    </div>
+  </div>
+
+  <div class="post__foot">
+    <span>Molenweg 49, Rozenburg</span>
+    <span class="post__foot-dot"></span>
+    <span class="post__foot-handle">0181-219017</span>
+  </div>
+</div>
+</body>
+</html>

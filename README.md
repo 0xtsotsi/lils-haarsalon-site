@@ -22,6 +22,14 @@ De vier pagina's:
 | Over ons | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/over-ons/ |
 | Contact | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/contact/ |
 
+Daarnaast staat het **socialmediapakket** op:
+
+**https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/social/**
+
+Daar staan 12 kant-en-klare posts (elk in vier formaten), vier korte video's,
+de bijschriften met hashtags en het weekschema. Alles is met één klik te
+downloaden. Zie `social/README.md` voor de volledige beschrijving.
+
 ## De site lokaal openen
 
 **Makkelijkst: dubbelklik `index.html`.** De site werkt dan meteen, zonder server.
@@ -52,6 +60,32 @@ De vier pagina's lokaal zijn dan te vinden op:
 | Over ons | http://localhost:8123/over-ons/ |
 | Contact | http://localhost:8123/contact/ |
 
+## Het socialmediapakket
+
+In `social/` staat een vast pakket voor Instagram, Facebook en WhatsApp:
+
+- **48 beelden**: 12 posts, elk in vier formaten (vierkant 1080, portret
+  1080x1350, story 1080x1920, landschap 1200x628)
+- **4 video's** van 6,4 seconden, H.264 en 30 fps
+- **5 postschemas** die steeds terugkomen: sfeer, prijs, haaradvies,
+  openingstijden en team
+- Bijschriften met hashtags, en een weekschema
+
+Alles is gebouwd op dezelfde merkidentiteit als de website: hetzelfde groen,
+ivoor en messing, dezelfde lettertypen, het stoplicht linksboven op elke post
+en de knip als video.
+
+Opnieuw renderen gaat met:
+
+```bash
+npm run social:images     # de 48 beelden
+npm run social:video      # de vier video's (ffmpeg nodig)
+npm run social:all        # beelden, bijschriften en de downloadpagina
+```
+
+De sjablonen staan in `social/templates/`, alle teksten in
+`social/content/posts.json`. Zie `social/README.md`.
+
 ## Mapstructuur
 
 ```
@@ -62,6 +96,7 @@ contact/                contactgegevens, kaart en afspraakformulier
 assets/css/styles.css   alle stijlen en design tokens
 assets/js/main.js       statuslamp, mobiel menu, openingstijden, formulier, scroll-reveal
 assets/img/             foto's
+social/                 het socialmediapakket (zie social/README.md)
 start-site.bat          start de lokale server en open de browser
 start-tunnel.bat        start de server plus een publieke tunnel om te delen
 DESIGN.md               ontwerpkeuzes en kleurcontrasten
