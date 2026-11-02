@@ -1,0 +1,14 @@
+# Regeleindes vastzetten op LF zodat de working tree niet per platform verschilt.
+* text=auto eol=lf
+
+# Binaire bestanden niet aanraken.
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.mp4 binary
