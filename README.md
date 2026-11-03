@@ -5,10 +5,10 @@ Geen build-stap, geen dependencies.
 
 ## De live site
 
-**https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/**
+**https://0xtsotsi.github.io/lils-haarsalon-site/**
 
 Die link is permanent en altijd bereikbaar. De staat op GitHub Pages: de code
-staat in de repository `jalvdbroek-ship-it/lils-haarsalon-site` en elke keer
+staat in de repository `0xtsotsi/lils-haarsalon-site` en elke keer
 dat je naar `main` pusht, bouwt GitHub de site opnieuw. De repo is openbaar,
 want GitHub Pages is op een gratis account alleen mogelijk voor openbare repos.
 Er staat geen privékleding of wachtwoord in.
@@ -17,14 +17,14 @@ De vier pagina's:
 
 | | |
 |---|---|
-| Home | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/ |
-| Behandelingen | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/behandelingen/ |
-| Over ons | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/over-ons/ |
-| Contact | https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/contact/ |
+| Home | https://0xtsotsi.github.io/lils-haarsalon-site/ |
+| Behandelingen | https://0xtsotsi.github.io/lils-haarsalon-site/behandelingen/ |
+| Over ons | https://0xtsotsi.github.io/lils-haarsalon-site/over-ons/ |
+| Contact | https://0xtsotsi.github.io/lils-haarsalon-site/contact/ |
 
 Daarnaast staat het **socialmediapakket** op:
 
-**https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/social/**
+**https://0xtsotsi.github.io/lils-haarsalon-site/social/**
 
 Daar staan 12 kant-en-klare posts (elk in vier formaten), vier korte video's,
 de bijschriften met hashtags en het weekschema. Alles is met één klik te
@@ -113,7 +113,7 @@ De site staat op GitHub Pages. Om iets te wijzigen:
 GitHub bouwt de site daarna binnen een minuut opnieuw. De URL blijft hetzelfde.
 
 De repository `0xtsotsi/LilsHaarsalon` is de privé-versie waar de voorgeschiedenis
-staat; `jalvdbroek-ship-it/lils-haarsalon-site` is de openbare repo die Pages
+staat; `0xtsotsi/lils-haarsalon-site` is de openbare repo die Pages
 serveert.
 
 ## Wat er staat vast
