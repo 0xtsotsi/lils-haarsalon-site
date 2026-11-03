@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/sitemap.xml
+Sitemap: https://0xtsotsi.github.io/lils-haarsalon-site/sitemap.xml
