@@ -40,7 +40,7 @@ Deze gegevens staan op elke post, zodat je ze niet hoeft te typen:
 - Molenweg 49, Rozenburg
 - 0181-219017
 - @lilshaarsalon
-- Website: https://jalvdbroek-ship-it.github.io/lils-haarsalon-site/
+- Website: https://0xtsotsi.github.io/lils-haarsalon-site/
 
 En dit zijn de openingstijden, voor het geval er iets verandert:
 
